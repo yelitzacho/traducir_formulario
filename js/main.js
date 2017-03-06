@@ -16,7 +16,9 @@ traducirEspañol();
 
 //Función que imprimirá los datos ingresados
 function mostrar (){
-  var imprimir = document.innerHTML('imprimir');
-
+  var email = document.getElementById("inputEmail").value;
+  var password = document.getElementById("inputPassword").value;
+  document.getElementById("imprimir").innerHTML = "<h3>" + "Datos ingresados"+ "</h3>" +
+                                                  "Correo electrónico: " + email + "</br>" +
+                                                  "Clave: " + password;
 }
-mostrar();
